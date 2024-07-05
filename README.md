@@ -35,7 +35,7 @@ To set up this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/Ochieng-001/ochieng.git
 2. **Navigate through the project directory:**
     cd ochieng 
 
