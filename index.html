@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my humble portfolio where everything about me is.">
+    <meta name="keywords" content="web development, teacher, learner, networking, cybersecurity">
+    <meta name="author" content="Ochieng">
+    <title>Ochieng Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Sf4CTiWkQ5ecvHm1luD2KJvnwXbyuMwqLjeN6YIYkUDmKjUuJh5YS7wQd27L8ZZbHf3mJ+U68zD+kEuJtP9sMg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="also me.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="also me.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation" aria-label="Main Navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="also me.jpg" alt="Logo" style="height: 40px; border-radius: 50px;">
+        Ochieng
+    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location">Location</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#quotes">Qoutes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fun-facts">Fun Fact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myblog.html">Blogs</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+  </nav>
+  
+  
+  
+  <section id="hero-section" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>Welcome to My Humble Portfolio</h1>
+                <p>Explore my services, skills, and expertise in networking.</p>
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+            </div>
+            <div class="col-md-6">
+                <!-- Placeholder image, replace with my actual background image -->
+                <div class="hero-image">
+                    <!-- Add my background image here -->
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  
+      <section id="portfolio" class="portfolio-section">
+        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="background.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Project 1</h5>
+                        <p>Home lab.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="one.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Project 2</h5>
+                        <p>Packet tracer.</p>
+                    </div>
+                </div>
+              
+             <div class="carousel-item">
+                    <img class="d-block w-100" src="two.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Project 3</h5>
+                        <p>Project me.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+  
+  
+
+  
+  
+       <section id="portfolio" class="portfolio-section py-5">
+       <div class="container">
+        <h2 class="text-center mb-5">My Portfolio</h2>
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project 1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Setting my lab</h5>
+                        <p class="card-text">This is my home lab where every magic happens it is fun.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal1">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project 2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Designing</h5>
+                        <p class="card-text">Here I was making good use of the cisco packet tracer to design a logical view of the network.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="also me.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Me </h5>
+                        <p class="card-text">Im also a project by the way</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#portfolioModal3">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Modals -->
+<!-- Modal 1 -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal1Label">Setting home lab</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="project 1.jpg" class="img-fluid mb-3" alt="Project 1">
+                <p>Designed my networking home lab with meticulous planning, configuring routers, switches, and servers. Implemented VLANs, subnets, and security protocols. Tested connectivity and optimized performance. It was fun!.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal2Label">Designing logically</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="project 2.jpg" class="img-fluid mb-3" alt="Project 2">
+                <p>Exploring Cisco Packet Tracer for projects brought networking concepts to life through virtual simulations. Creating networks with routers, switches, and devices was intuitive and educational. Troubleshooting scenarios and seeing real-time packet flows enhanced understanding. Collaborating and sharing projects with peers added a dynamic learning aspect. Using Cisco Packet Tracer for projects was an enriching and enjoyable experience..</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal3Label">Project about me</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="also me.jpg" class="img-fluid mb-3" alt="Project 3">
+                <p>I am project because I am self-driven project enthusiast, constantly challenging myself with diverse networking projects. From configuring complex network topologies to troubleshooting intricate issues, I navigate through challenges with confidence. Each project is a testament to my growing expertise in network design, security, and optimization. I take pride in honing my skills, appreciating every milestone reached and lesson learned. As a dedicated learner and problem-solver, I thrive in the dynamic world of networking, continually pushing boundaries and expanding my capabilities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+  <section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="original me.jpg" alt="My Image" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-lg-8">
+                <h2 class="mb-4">About Me</h2>
+                <p class="lead">Hello! I'm Emperor, a computer science student passionate about networking and technology. I am currently pursuing my degree and working on various projects that involve network design, implementation, and management. My goal is to leverage my skills and knowledge to create efficient and secure network solutions.</br> Driven by a passion for technology and fueled by a relentless work ethic, I embody a self-driven and hard-working approach in every endeavor. Whether tackling network infrastructure upgrades, mastering new protocols, or delving into cybersecurity measures, I immerse myself fully in each project. <br> Through perseverance and a thirst for knowledge, I strive to excel in the rapidly evolving field of networking. My proactive nature ensures that I not only meet but exceed expectations, consistently delivering innovative solutions and maintaining high standards of performance. Embracing challenges as opportunities for growth, I am committed to continuous improvement and achieving excellence in everything I do.<br/></p>
+                <p>In addition to my studies, I enjoy staying up-to-date with the latest advancements in technology and continuously learning new skills. I'm excited to share my journey and projects with you through this portfolio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  <section id="infographics" class="infographics-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="infographic-card">
+                    <i class="fas fa-network-wired fa-3x"></i>
+                    <h5>Network Devices</h5>
+                    <p>Learn about the various devices that make up a network, including routers, switches, and firewalls, and how they work together to ensure smooth data communication.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infographic-card">
+                    <i class="fas fa-shield-alt fa-3x"></i>
+                    <h5>Security Measures</h5>
+                    <p>Discover essential network security measures like firewalls, intrusion detection systems, and VPNs that protect data integrity and confidentiality.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infographic-card">
+                    <i class="fas fa-server fa-3x"></i>
+                    <h5>Server Management</h5>
+                    <p>Understand the crucial role of server management in network operations, including server configuration, maintenance, and monitoring for optimal performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  <section id="education" class="education-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Education</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="education-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bachelor of Computer Science</h3>
+                        <p class="card-university">Zetech University, Nairobi</p>
+                        <span class="card-date">2022 - Present</span>
+                        <p>Currently pursuing a Bachelor degree in Computer Science, focusing on networking, software development, and cybersecurity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="education-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Certification: Cybersecurity</h3>
+                         <span class="card-date">Achieved in 2024</span>
+                        <p>Achieved certification in cybersecurity, demonstrating proficiency and knowledge in virus protection, securing devices from attack, network defense, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more education cards as needed -->
+        </div>
+    </div>
+</section>
+
+
+  
+  <!-- Curriculum Vitae & Resume Section -->
+<section id="cv-resume" class="cv-resume-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Curriculum Vitae & Resume</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="subsection-title">Curriculum Vitae</h3>
+                <p class="cv-description">Download my comprehensive curriculum vitae to get an in-depth look at my academic and professional background, including all relevant certifications and achievements.Also not for the chicken hearted  😂</p>
+                <a href="cv and resume.pdf" class="btn btn-primary" download>Download CV</a>
+            </div>
+            <div class="col-md-6">
+                <h3 class="subsection-title">Resume</h3>
+                <p class="resume-description">Download my resume to view a concise summary of my qualifications, work experience, and skills that make me an ideal candidate for your networking and cybersecurity needs. My resume is not for the weak    😂😂 </p>
+                <a href="cv and resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+     
+        <div class="employment-history mt-5">
+            <h3 class="section-title text-center mb-5">Employment Details</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">Network Engineer</h4>
+                        <p class="timeline-company">On My Way there</p>
+                        <span class="timeline-date">2024 - The Present</span>
+                        <p>I must be a network engineer and my responsibilitues will include network troubleshooting, configurations, and ensuring robust cybersecurity measures are in place. Key achievements will also include improving network uptime by 50% and implementing advanced security protocols.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">IT Support Specialist</h4>
+                        <p class="timeline-company">I can do this for now</p>
+                        <span class="timeline-date">2024 - the Present</span>
+                        <p>Of course I can provide technical support for network issues, conducte regular maintenance, and assist in the deployment of new network solutions and be recognized as an excellent customer service and problem-solving skilled interllectual.</p>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+  
+  
+  <section id="services" class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">My Services</h2>
+        <div class="row">
+            <!-- Service Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Network Design</h3>
+                        <p class="card-text">Designing robust and scalable network architectures to meet business requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Switch Configuration</h3>
+                        <p class="card-text">Configuring switches for optimal performance, including VLAN setup and trunking.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Network Troubleshooting</h3>
+                        <p class="card-text">Diagnosing and resolving network issues to ensure minimal downtime and optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Security Implementation</h3>
+                        <p class="card-text">Implementing network security measures to protect against unauthorized access and attacks.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Wireless Networking</h3>
+                        <p class="card-text">Setting up and maintaining wireless networks to ensure coverage and connectivity.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Network Monitoring</h3>
+                        <p class="card-text">Monitoring network performance and health to proactively address issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  <section id="skills" class="skills-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">My Skills</h2>
+        <div class="row">
+            <!-- Skill Item 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Network Design</h3>
+                    <p class="skill-description">Creating efficient and scalable network architectures to meet business needs.</p>
+                </div>
+            </div>
+            <!-- Skill Item 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Configuration of Switches</h3>
+                    <p class="skill-description">Configuring and managing network switches, VLANs, and trunking.</p>
+                </div>
+            </div>
+            <!-- Skill Item 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Router Configuration</h3>
+                    <p class="skill-description">Setting up and managing routers for optimal network performance.</p>
+                </div>
+            </div>
+            <!-- Skill Item 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Network Troubleshooting</h3>
+                    <p class="skill-description">Diagnosing and resolving network issues quickly and efficiently.</p>
+                </div>
+            </div>
+            <!-- Skill Item 5 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Network Security</h3>
+                    <p class="skill-description">Implementing security measures to protect networks from threats.</p>
+                </div>
+            </div>
+            <!-- Skill Item 6 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Wireless Networking</h3>
+                    <p class="skill-description">Designing and maintaining wireless networks for optimal coverage and performance.</p>
+                </div>
+            </div>
+            <!-- Skill Item 7 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Network Monitoring</h3>
+                    <p class="skill-description">Monitoring network performance and health to proactively address issues.</p>
+                </div>
+            </div>
+            <!-- Skill Item 8 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">Firewalls</h3>
+                    <p class="skill-description">Configuring and managing firewalls to control network traffic and enhance security.</p>
+                </div>
+            </div>
+            <!-- Skill Item 9 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="skill-card">
+                    <h3 class="skill-title">VPN Configuration</h3>
+                    <p class="skill-description">Setting up and managing Virtual Private Networks for secure remote access.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  
+  
+  <section id="testimonials" class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Emperor's networking skills are top-notch. Highly recommend!"</p>
+                    <p class="testimonial-author">- Mr Naboth, CEO</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Exceptional work in setting up our office network. Great job!"</p>
+                    <p class="testimonial-author">- Sir Jerry , IT Manager</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Professional and reliable. We are very satisfied with the service."</p>
+                    <p class="testimonial-author">- Mrs Atieno, CTO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  
+  
+  <section id="location" class="location-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Location</h2>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1104135582657!2d36.80486481475582!3d-1.2868153359976326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f182db86ebc67%3A0x7b0545008b10a1fe!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1625696737021!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+  
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <ul class="contact-list">
+                    <li><a href="tel:+254794844343"><i class="fas fa-phone-alt"></i> Call Me</a></li>
+                    <li><a href="mailto:ochiengpaul654@gmail.com"><i class="far fa-envelope"></i> Email Me</a></li>
+                    <li><a href="https://twitter.com/ochieng_001" target="_blank"><i class="fab fa-twitter"></i> Tweet</a></li>
+                    <li><a href="https://www.linkedin.com/in/ochieng-paul-924a94315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/Ochieng-001" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://wa.me/254794844343" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  <section id="vision" class="vision-mission-section">
+    <div class="container">
+        <h2>My Vision</h2>
+        <p>To be a leading innovator in the networking field, driving advancements and fostering seamless communication across the globe.</p>
+    </div>
+</section>
+
+<section id="mission" class="vision-mission-section">
+    <div class="container">
+        <h2>My Mission</h2>
+        <p>My mission is to provide reliable and cutting-edge networking solutions that empower businesses and individuals to achieve their full potential through robust and secure connectivity.</p>
+    </div>
+</section>
+
+  
+  
+  <section id="blog" class="blog-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <h3 class="blog-title">Understanding Network Security</h3>
+                    <p class="blog-date">July 5, 2024</p>
+                    <p class="blog-excerpt">A deep dive into network security practices and how to safeguard your infrastructure...</p>
+                    <a href="myblog.html" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <h3 class="blog-title">The Future of Networking</h3>
+                    <p class="blog-date">June 20, 2024</p>
+                    <p class="blog-excerpt">Exploring the upcoming trends in networking and how they will shape our connected world...</p>
+                    <a href="myblog.html" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <h3 class="blog-title">Top Certifications for Network Engineers</h3>
+                    <p class="blog-date">June 5, 2024</p>
+                    <p class="blog-excerpt">A guide to the most valuable certifications for aspiring network professionals...</p>
+                    <a href="myblog.html" class="blog-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  <section id="faq" class="faq-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeadingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                            What is network security?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseOne" class="collapse show" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Network security involves policies and practices designed to prevent and monitor unauthorized access, misuse, or denial of a computer network and network-accessible resources.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeadingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                            How do I secure my home network?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Securing your home network involves changing default passwords, using strong encryption, keeping your router's firmware updated, and ensuring your devices are secure.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeadingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                            What are the basic components of a computer network?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The basic components of a computer network include routers, switches, hubs, access points, and network interface cards (NICs).
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeadingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                            What is the difference between a router and a switch?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        A router connects different networks together and routes data between them, while a switch connects devices within a single network and directs data to the correct destination.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeadingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                            How often should I update my network devices' firmware?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapseFive" class="collapse" aria-labelledby="faqHeadingFive" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        It's recommended to check for and install firmware updates for your network devices every three to six months to ensure they have the latest security patches and features.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+  <section id="quotes" class="quotes-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Remember</h2>
+        <div class="quote">
+            <blockquote>
+                "The only way to do great work is to love what you do."
+            </blockquote>
+            <p class="quote-author">– Steve Jobs</p>
+        </div>
+        <div class="quote">
+            <blockquote>
+                "Success is not final, failure is not fatal: It is the courage to continue that counts."
+            </blockquote>
+            <p class="quote-author">– Winston Churchill</p>
+        </div>
+        <div class="quote">
+            <blockquote>
+                "The greatest glory in living lies not in never falling, but in rising every time we fall."
+            </blockquote>
+            <p class="quote-author">– Nelson Mandela</p>
+        </div>
+        <div class="quote">
+            <blockquote>
+                "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+            </blockquote>
+            <p class="quote-author">– Proverbs 3:5-6 (NIV)</p>
+        </div>
+        <div class="quote">
+            <blockquote>
+                "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God."
+            </blockquote>
+            <p class="quote-author">– Philippians 4:6 (NIV)</p>
+        </div>
+        <p class="concluding-statement">Do not forget to pray in everything you do.</p>
+    </div>
+</section>
+  
+  
+  
+  <section id="fun-facts" class="fun-facts-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Pause and have some Fun as you Brainstorm</h2>
+        <div class="fun-fact card" data-answer="Ray Tomlinson">
+            <div class="card-body">
+                <p class="card-text">Did you know? The first email was sent by ______ to himself in 1971, introducing the @ symbol to email addresses.</p>
+                <p class="answer">Answer: Ray Tomlinson</p>
+            </div>
+        </div>
+        <div class="fun-fact card" data-answer="sonar pings">
+            <div class="card-body">
+                <p class="card-text">In networking, a 'ping' command is named after the sound of _____ used for echolocation in submarines.</p>
+                <p class="answer">Answer: sonar pings</p>
+            </div>
+        </div>
+        <div class="fun-fact card" data-answer="luminiferous ether">
+            <div class="card-body">
+                <p class="card-text">Ethernet cables are named after the _____, a hypothetical medium for the propagation of light.</p>
+                <p class="answer">Answer: luminiferous ether</p>
+            </div>
+        </div>
+        <div class="fun-fact card" data-answer="It caught a virus">
+            <div class="card-body">
+                <p class="card-text">Why did the computer keep freezing during networking? It ______ while surfing the web!</p>
+                <p class="answer">Answer: It caught a virus</p>
+            </div>
+        </div>
+        <div class="fun-fact card" data-answer="It left its Windows open">
+            <div class="card-body">
+                <p class="card-text">Why was the computer cold? _____!</p>
+                <p class="answer">Answer: It left its Windows open</p>
+            </div>
+        </div>
+        <p class="concluding-statement">Enjoy these facts and jokes about networking!</p>
+    </div>
+</section>
+
+  
+  <section id="subscribe" class="subscribe-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Subscribe to My Newsletter</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="subscribeForm">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+
+  <footer class="footer-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="myblog.html">Privacy Policy</a></li>
+                    <li><a href="myblog.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    <li><i class="fas fa-envelope"></i> ochiengpaul654@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +254794844343</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Get in Touch</h4>
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/ochieng_001" target="_blank"><i class="fab fa-twitter"></i>Twitter </a></li>
+                    <li><a href="https://www.linkedin.com/in/ochieng-paul-924a94315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/Ochieng-001" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://wa.me/254794844343" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Ochieng. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+ 
+ <a href="#hero-section"><button id="back-to-top">&uarr;</button></a>
+  
+
+
+</body>
+</html>
