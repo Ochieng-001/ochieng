@@ -1,5 +1,21 @@
+// Wait for the document to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for all anchor links
+    // Navbar background change on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.padding = '10px 0';
+            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.9) !important';
+        } else {
+            navbar.style.padding = '15px 0';
+            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.25) !important';
+        }
+    });
+
+    // Initialize Bootstrap tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -8,187 +24,90 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+    // Back to top button visibility toggle
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.pointerEvents = 'auto';
+        } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.pointerEvents = 'none';
+        }
+    });
+
+    // Fun facts reveal on click
+    const funFacts = document.querySelectorAll('.fun-fact');
+    funFacts.forEach(fact => {
+        fact.addEventListener('click', function() {
+            this.classList.toggle('revealed');
         });
     });
 
-    // Fade-in effect for the About section
-    const aboutSection = document.querySelector('.about-section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                aboutSection.classList.add('fade-in');
-                observer.unobserve(entry.target);
+    // Form submission handling
+    const subscribeForm = document.getElementById('subscribeForm');
+    if (subscribeForm) {
+        subscribeForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('input[type="email"]');
+            if (emailInput.value) {
+                // You would typically send this to a server
+                alert('Thank you for subscribing with: ' + emailInput.value);
+                emailInput.value = '';
             }
         });
-    }, { threshold: 0.1 });
-
-    observer.observe(aboutSection);
-});
-
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Fade-in effect for the Education section
-    const educationSection = document.querySelector('.education-section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                educationSection.classList.add('fade-out');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    observer.observe(educationSection);
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Fade-in effect for the Services section
-    const servicesSection = document.querySelector('.services-section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                servicesSection.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    observer.observe(servicesSection);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Fade-in effect for the Skills section
-    const skillsSection = document.querySelector('.skills-section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                skillsSection.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    observer.observe(skillsSection);
-});
-
-// JavaScript to toggle visibility of Quotes section
-document.addEventListener("DOMContentLoaded", function() {
-    const quotesSection = document.getElementById("quotes");
-    
-    // Hide the quotes section initially
-    quotesSection.style.display = "none";
-    
-    // Function to toggle visibility when navbar link is clicked
-    const quotesNavLink = document.querySelector('a[href="#quotes"]');
-    quotesNavLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        quotesSection.style.display = "block";
-        funFactsSection.style.display = "none";
-        // Scroll to the quotes section if needed
-        quotesSection.scrollIntoView({ behavior: "smooth" });
-    });
-});
-
-
-// JavaScript to toggle visibility of Fun Facts section
-document.addEventListener("DOMContentLoaded", function() {
-    const funFactsSection = document.getElementById("fun-facts");
-    
-    // Hide the fun facts section initially
-    funFactsSection.style.display = "none";
-    
-    // Function to toggle visibility when navbar link is clicked
-    const funFactsNavLink = document.querySelector('a[href="#fun-facts"]');
-    funFactsNavLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        funFactsSection.style.display = "block";
-        quotesSection.style.display = "none";
-        // Scroll to the fun facts section if needed
-        funFactsSection.scrollIntoView({ behavior: "smooth" });
-    });
-});
-
-
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    var backToTopButton = document.getElementById("back-to-top");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
     }
-}
 
-document.getElementById('back-to-top').addEventListener('click', function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    // Animation for skill cards
+    const skillCards = document.querySelectorAll('.skill-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    skillCards.forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+    });
+
+    // Add animation to timeline items
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    timelineItems.forEach(item => {
+        timelineObserver.observe(item);
+    });
+
+    // Adjust navbar active state based on scroll position
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
 });
-
-
-
-
-document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for subscribing!');
-    // Here I wll add AJAX call to handle form submission
-});
-
-
-
-
-
-
